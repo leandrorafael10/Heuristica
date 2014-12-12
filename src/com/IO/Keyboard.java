@@ -145,14 +145,14 @@ public static boolean readBoolean(boolean defaultvalue)
  catch (IOException ioe) // se houver algum erro de leitura
    {
    if (debug) // se for pedida a impressão de mensagens de erro
-     System.err.println("KEYBOARD:: Erro de entrada e saída lendo um boolean. "+
+     System.err.println("KEYBOARD:: Erro de entrada e sa�da lendo um boolean. "+
                         "Retorna "+defaultvalue);
    return defaultvalue; // retorna o valor default
    }
  catch (NoSuchElementException nsee) // se não houver tokens
    {
    if (debug) // se for pedida a impressão de mensagens de erro
-     System.err.println("KEYBOARD:: Entrada não contém um boolean. "+
+     System.err.println("KEYBOARD:: Entrada n�o contem um boolean. "+
                         "Retorna "+defaultvalue);
    return defaultvalue; // retorna o valor default
    }
@@ -194,21 +194,21 @@ public static byte readByte(byte defaultvalue)
  catch (IOException ioe) // se houver algum erro de leitura
    {
    if (debug) // se for pedida a impressão de mensagens de erro
-     System.err.println("KEYBOARD:: Erro de entrada e saída lendo um byte. "+
+     System.err.println("KEYBOARD:: Erro de entrada e sa�da lendo um byte. "+
                         "Retorna "+defaultvalue);
    return defaultvalue; // retorna o valor default
    }
  catch (NumberFormatException nfe) // se houver algum erro de conversão
    {
    if (debug) // se for pedida a impressão de mensagens de erro
-     System.err.println("KEYBOARD:: Erro de conversão de "+nt+" para um byte. "+
+     System.err.println("KEYBOARD:: Erro de convers�o de "+nt+" para um byte. "+
                         "Retorna "+defaultvalue);
    return defaultvalue;
    }
  catch (NoSuchElementException nsee) // se não houver tokens
    {
    if (debug) // se for pedida a impressão de mensagens de erro
-     System.err.println("KEYBOARD:: Entrada não contém um byte. "+
+     System.err.println("KEYBOARD:: Entrada n�o cont�m um byte. "+
                         "Retorna "+defaultvalue);
    return defaultvalue; // retorna o valor default
    }
@@ -552,7 +552,7 @@ public static char readChar(char defaultvalue)
                         "Retorna "+defaultvalue);
    return defaultvalue; // retorna o valor default
    }
- } // fim do método readChar
+ } // fim do metodo readChar
 
 /**
 * O método <tt>readString</tt> lê e retorna uma instância da classe <tt>String</tt>.
@@ -564,7 +564,7 @@ public static char readChar(char defaultvalue)
 public static String readString() 
  {
  return readString("");
- } // fim do método readString
+ } // fim do metodo readString
 
 /**
 * O método <tt>readString</tt> lê e retorna uma instância da classe <tt>String</tt>. 
